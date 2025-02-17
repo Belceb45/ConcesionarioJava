@@ -4,16 +4,17 @@ package vehiculos;
 public abstract class Vehiculo {
 
     // Atributos
+  
     protected String marca;
     protected String modelo;
     protected String velocidad;
-    protected int año;
+    protected String kilometros;
     protected int precio;
-    protected int kilometros;
+    protected int año;
     protected int caballos;
 
     // Constructor
-    public Vehiculo(String marca, String modelo, int año, int precio, int kilometros, String velocidad,int caballos) {
+    public Vehiculo(String marca, String modelo, int año, int precio, String kilometros, String velocidad,int caballos) {
         this.marca = marca;
         this.modelo = modelo;
         this.año = año;
@@ -24,6 +25,7 @@ public abstract class Vehiculo {
     }
 
     // Metodos Getters y Setters
+   
     public String getVelocidad() {
         return velocidad;
     }
@@ -32,11 +34,11 @@ public abstract class Vehiculo {
         this.velocidad = velocidad;
     }
 
-    public int getKilometros() {
+    public String getKilometros() {
         return kilometros;
     }
 
-    public void setKilometros(int kilometros) {
+    public void setKilometros(String kilometros) {
         this.kilometros = kilometros;
     }
 
@@ -79,7 +81,7 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return "Auto\n" + "Modelo: " + modelo + "\nMarca: " + marca + "\nAño: " + año + "\nVelocidad: " + velocidad
-                + "\nPrecio c/dia: " + precio + "\nKilometros: " + kilometros + "\nCaballos de fuerza: " + caballos;
+        return "Modelo: " + modelo + "\nMarca: " + marca + "\nAño: " + año + "\nVelocidad: " + velocidad
+                + "\nPrecio c/dia: $" + precio + "\nKilometros: " + kilometros + "\nCaballos de fuerza: " + caballos;
     }
 }

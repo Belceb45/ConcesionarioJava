@@ -1,0 +1,213 @@
+{
+  "motos": [
+    {
+      "marca": "Honda",
+      "modelo": "CBR600RR",
+      "año": 2023,
+      "precio": 12000,
+      "kilometros": "5000 km",
+      "velocidad": "250 km/h",
+      "caballos": 120,
+      "tipo": "Deportiva",
+      "cilindrada": 599
+    },
+    {
+      "marca": "Yamaha",
+      "modelo": "YZF-R1",
+      "año": 2024,
+      "precio": 18000,
+      "kilometros": "2000 km",
+      "velocidad": "299 km/h",
+      "caballos": 200,
+      "tipo": "Deportiva",
+      "cilindrada": 998
+    },
+    {
+      "marca": "Kawasaki",
+      "modelo": "Ninja 400",
+      "año": 2023,
+      "precio": 7000,
+      "kilometros": "1000 km",
+      "velocidad": "190 km/h",
+      "caballos": 49,
+      "tipo": "Deportiva",
+      "cilindrada": 399
+    },
+    {
+      "marca": "Suzuki",
+      "modelo": "GSX-R750",
+      "año": 2022,
+      "precio": 14000,
+      "kilometros": "8000 km",
+      "velocidad": "260 km/h",
+      "caballos": 148,
+      "tipo": "Deportiva",
+      "cilindrada": 750
+    },
+    {
+      "marca": "Ducati",
+      "modelo": "Panigale V4",
+      "año": 2024,
+      "precio": 25000,
+      "kilometros": "3000 km",
+      "velocidad": "300 km/h",
+      "caballos": 214,
+      "tipo": "Deportiva",
+      "cilindrada": 1103
+    },
+    {
+      "marca": "Harley-Davidson",
+      "modelo": "Sportster S",
+      "año": 2023,
+      "precio": 16000,
+      "kilometros": "4000 km",
+      "velocidad": "180 km/h",
+      "caballos": 121,
+      "tipo": "Cruiser",
+      "cilindrada": 1252
+    },
+    {
+      "marca": "BMW",
+      "modelo": "S 1000 RR",
+      "año": 2024,
+      "precio": 22000,
+      "kilometros": "2500 km",
+      "velocidad": "299 km/h",
+      "caballos": 205,
+      "tipo": "Deportiva",
+      "cilindrada": 999
+    },
+    {
+      "marca": "KTM",
+      "modelo": "Duke 390",
+      "año": 2023,
+      "precio": 6000,
+      "kilometros": "6000 km",
+      "velocidad": "170 km/h",
+      "caballos": 44,
+      "tipo": "Naked",
+      "cilindrada": 373
+    },
+    {
+      "marca": "Triumph",
+      "modelo": "Street Triple RS",
+      "año": 2023,
+      "precio": 13000,
+      "kilometros": "3500 km",
+      "velocidad": "240 km/h",
+      "caballos": 123,
+      "tipo": "Naked",
+      "cilindrada": 765
+    },
+    {
+      "marca": "Aprilia",
+      "modelo": "RSV4 1100 Factory",
+      "año": 2024,
+      "precio": 28000,
+      "kilometros": "1500 km",
+      "velocidad": "305 km/h",
+      "caballos": 217,
+      "tipo": "Deportiva",
+      "cilindrada": 1099
+    },
+    {
+      "marca": "Honda",
+      "modelo": "CB500X",
+      "año": 2023,
+      "precio": 7500,
+      "kilometros": "5000 km",
+      "velocidad": "180 km/h",
+      "caballos": 47,
+      "tipo": "Adventure",
+      "cilindrada": 471
+    },
+    {
+      "marca": "Ducati",
+      "modelo": "Multistrada V4",
+      "año": 2024,
+      "precio": 29000,
+      "kilometros": "4000 km",
+      "velocidad": "250 km/h",
+      "caballos": 170,
+      "tipo": "Adventure",
+      "cilindrada": 1158
+    },
+    {
+      "marca": "Suzuki",
+      "modelo": "V-Strom 650",
+      "año": 2023,
+      "precio": 9000,
+      "kilometros": "7000 km",
+      "velocidad": "200 km/h",
+      "caballos": 70,
+      "tipo": "Adventure",
+      "cilindrada": 645
+    },
+    {
+      "marca": "Royal Enfield",
+      "modelo": "Himalayan",
+      "año": 2023,
+      "precio": 5500,
+      "kilometros": "10000 km",
+      "velocidad": "140 km/h",
+      "caballos": 24,
+      "tipo": "Adventure",
+      "cilindrada": 411
+    },
+    {
+      "marca": "Harley-Davidson",
+      "modelo": "Fat Boy 114",
+      "año": 2024,
+      "precio": 22000,
+      "kilometros": "3000 km",
+      "velocidad": "190 km/h",
+      "caballos": 94,
+      "tipo": "Cruiser",
+      "cilindrada": 1868
+    },
+    {
+      "marca": "Indian",
+      "modelo": "Scout Bobber",
+      "año": 2023,
+      "precio": 14000,
+      "kilometros": "2000 km",
+      "velocidad": "180 km/h",
+      "caballos": 100,
+      "tipo": "Cruiser",
+      "cilindrada": 1133
+    },
+    {
+      "marca": "Moto Guzzi",
+      "modelo": "V7 Stone",
+      "año": 2023,
+      "precio": 10500,
+      "kilometros": "5000 km",
+      "velocidad": "170 km/h",
+      "caballos": 65,
+      "tipo": "Cruiser",
+      "cilindrada": 744
+    },
+    {
+      "marca": "BMW",
+      "modelo": "R 1250 GS",
+      "año": 2024,
+      "precio": 25000,
+      "kilometros": "6000 km",
+      "velocidad": "220 km/h",
+      "caballos": 136,
+      "tipo": "Adventure",
+      "cilindrada": 1254
+    },
+    {
+      "marca": "KTM",
+      "modelo": "1290 Super Duke R",
+      "año": 2024,
+      "precio": 20000,
+      "kilometros": "3500 km",
+      "velocidad": "280 km/h",
+      "caballos": 180,
+      "tipo": "Naked",
+      "cilindrada": 1301
+    }
+  ]
+}

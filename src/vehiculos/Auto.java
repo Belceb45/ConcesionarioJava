@@ -5,7 +5,7 @@ public class Auto extends Vehiculo {
     private int numPuertas;
     private boolean deportivo;
    
-    public Auto(String marca, String modelo, int año, int precio,int kilometros, int numPuertas, boolean deportivo,String velocidad,int caballos) {
+    public Auto(String marca, String modelo, int año, int precio,String kilometros, int numPuertas, boolean deportivo,String velocidad,int caballos) {
         super(marca, modelo, año, precio,kilometros,velocidad,caballos);
         this.numPuertas = numPuertas;
         this.deportivo = deportivo;

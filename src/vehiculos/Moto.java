@@ -5,7 +5,8 @@ public class Moto extends Vehiculo {
     protected String tipo;
     protected int cilindrada;
 
-    public Moto(String marca, String modelo, int año, int precio, int kilometros, String velocidad, int caballos,String tipo, int cilindrada) {
+    
+    public Moto(String marca, String modelo, int año, int precio, String kilometros, String velocidad, int caballos,String tipo, int cilindrada) {
         super(marca, modelo, año, precio, kilometros, velocidad, caballos);
         this.tipo = tipo;
         this.cilindrada = cilindrada;
@@ -41,7 +42,7 @@ public class Moto extends Vehiculo {
         try {
             if (cilindrada > 125 && cilindrada < 500) {
                 System.out.println("Moto acelerando de forma normal... 🏍");
-            } else if (cilindrada >= 1000) {
+            } else if (cilindrada >= 500) {
                 System.out.println("Moto acelerando como un cohete 🚀");
             } else if (cilindrada <= 0) {
                 throw new IllegalStateException("La cilindrada no puede ser 0 o negativa");

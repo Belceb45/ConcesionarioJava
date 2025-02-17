@@ -1,0 +1,7 @@
+Paso para compilar y ejecutar el proyecto:
+
+1. Ejecutar:
+    javac -d bin -cp src src/Main.java
+
+2. Ejecutar: 
+    java -cp bin Main
