@@ -41,9 +41,9 @@ public class Moto extends Vehiculo {
     public void arrancar() {
         try {
             if (cilindrada > 125 && cilindrada < 500) {
-                System.out.println("Moto acelerando de forma normal... 🏍");
+                System.out.println("Moto acelerando de forma normal...");
             } else if (cilindrada >= 500) {
-                System.out.println("Moto acelerando como un cohete 🚀");
+                System.out.println("Moto acelerando como un cohete");
             } else if (cilindrada <= 0) {
                 throw new IllegalStateException("La cilindrada no puede ser 0 o negativa");
             } else {
@@ -62,7 +62,7 @@ public class Moto extends Vehiculo {
             }
 
             if ("deportiva".equalsIgnoreCase(tipo)) {
-                System.out.println("Tu moto tiene ABS, frenarás rápido y sin perder el control. 👍");
+                System.out.println("Tu moto tiene ABS, frenarás rápido y sin perder el control.");
             } else {
                 System.out.println("Frenando moto de manera normal...");
             }

@@ -1,7 +1,12 @@
 [
   {
-    "nombre": "Mauricio Rubio Haro",
+    "nombre": "Diego Rubio Haro",
+    "edad": 21,
+    "telefono": "4556434243"
+  },
+  {
+    "nombre": "Diego Ruiz",
     "edad": 29,
-    "telefono": "42132341"
+    "telefono": "345634543"
   }
 ]

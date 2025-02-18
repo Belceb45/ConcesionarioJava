@@ -41,15 +41,9 @@ public class Admin extends Persona {
         agenda.agregar(contacto);
     }
 
-    public void eliminarPersona(Contacto contacto) {
-        List<Contacto> contactos = agenda.getContactos();
-        if (contactos.contains(contacto)) {
-            contactos.remove(contacto);
-            System.out.println("Contacto eliminado con éxito.");
-        } else {
-            System.out.println("El contacto no existe.");
-        }
-    }
+    public void eliminarPersona(String nombre) {
+        agenda.eliminarPersona(buscarPorNombre(nombre));
+}
 
     public Contacto buscarPorNombre(String nombre) {
         return agenda.buscarPorNombre(nombre);
@@ -57,6 +51,10 @@ public class Admin extends Persona {
 
     public Contacto buscarPorTelefono(String telefono) {
         return agenda.buscarPorTelefono(telefono);
+    }
+
+    public void listar(){
+        agenda.mostrarUsuarios();
     }
 
     public void getMotos(List<Moto> motos){

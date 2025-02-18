@@ -17,6 +17,7 @@ public class Agenda {
 
     public Agenda() {
         this.contactos = new LinkedList<>();
+        cargarContactosDesdeJson();
     }
 
     public List<Contacto> getContactos() {
@@ -28,13 +29,23 @@ public class Agenda {
         guardarJSON();
     }
 
+    public void eliminarPersona(Contacto contacto) {
+        if (contactos.remove(contacto)) {
+            guardarJSON(); // Guardar cambios en el archivo JSON
+            System.out.println("Contacto eliminado con éxito.");
+        } else {
+            System.out.println("El contacto no existe.");
+        }
+    }
+    
+
     public Contacto buscarPorNombre(String nombre) {
         for (Contacto contacto : contactos) {
             if (contacto.getNombre().equalsIgnoreCase(nombre)) {
                 return contacto;
             }
         }
-        return null;
+        return null; // Retorna null si no encuentra el contacto
     }
 
     public Contacto buscarPorTelefono(String telefono) {
