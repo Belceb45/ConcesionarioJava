@@ -5,41 +5,13 @@ import vehiculos.Moto;
 import java.util.List;
 import java.util.Scanner;
 
-public class Contacto {
-    private String nombre;
-    private int edad;
-    private String telefono;
+public class Contacto extends Persona {
+
     private boolean concurrente;
 
     public Contacto(String nombre, int edad, String telefono, boolean concurrente) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.telefono = telefono;
+        super(nombre, edad, telefono);
         this.concurrente = concurrente;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
     }
 
     public boolean isConcurrente() {
@@ -52,6 +24,9 @@ public class Contacto {
 
     public void rentar(List<Auto> autos, List<Moto> motos) {
         Scanner sc = new Scanner(System.in);
+        
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
 
         System.out.println("-----------------------------------------------------------");
         System.out.println("------            RENTA DE CARROS Y MOTOS            ------");
@@ -108,10 +83,11 @@ public class Contacto {
         } else {
             System.out.println("Opción no válida.");
         }
+
     }
 
     @Override
     public String toString() {
-        return nombre + "\n" + edad + "\n" + telefono + "\n" + "Concurrente: " + concurrente;
+        return super.toString() + "\nConcurrente: " + concurrente;
     }
 }

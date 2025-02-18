@@ -43,6 +43,7 @@ public class JsonPropio {
         List<Auto> autos = new ArrayList<>();
         if (!json.contains("[") || !json.contains("]")) return autos; // JSON mal formado
 
+        //
         json = json.substring(json.indexOf("[") + 1, json.lastIndexOf("]")).trim();
         String[] autosData = json.split("},\\s*\\{"); // Separar cada auto
 
