@@ -36,6 +36,7 @@ public class Admin extends Persona {
         return agenda;
     }
 
+    /* METODOS PROPIOS DE AGENDA QUE SE MANEJAN DESDE ADMIN SIGUIENDO UNA LOGICA */
     // Agregar persona usando agenda desde Admin
     public void agregarPersona(Contacto contacto) {
         agenda.agregar(contacto);

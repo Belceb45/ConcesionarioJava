@@ -61,6 +61,7 @@ public class Main {
                                 Contacto contactoExistente = admin.buscarPorNombre(nombre);
 
                                 // Valido si el contacto existe antes de acceder a sus atributos)
+                                // trim para eliminar los espacios
                                 if (contactoExistente != null
                                         && nombre.trim().equalsIgnoreCase(contactoExistente.getNombre().trim())) {
                                     System.out.println("\nERROR, YA SE HA REGISTRADO");
