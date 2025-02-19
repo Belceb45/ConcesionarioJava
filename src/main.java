@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Admin por default no guardados en JSON
+        int opcion;
         Scanner sc = new Scanner(System.in);
         Admin admin = new Admin("Diego Rubio Haro", 21, "5616936324", "admin", "admin2908");
 
@@ -19,16 +20,16 @@ public class Main {
             String jsonMotos = JsonPropio.readJsonPropio("data/motos.json");
             List<Auto> autos = JsonPropio.parseAutos(jsonAutos);
             List<Moto> motos = JsonPropio.parseMotos(jsonMotos);
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
             while (true) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 // MENUS DE OPCIONES
                 System.out.println("--------------------  OPCIONES CONCESIONARIA  --------------------");
                 System.out.println("------     1. Ingresar/Admin    2. Rentar    3. Salir       ------");
                 System.out.println("------------------------------------------------------------------");
                 System.out.print("------  R: ");
 
-                int opcion = sc.nextInt();
+                opcion = sc.nextInt();
                 sc.nextLine(); // Limpiar buffer
                 System.out.print("\033[H\033[2J");
                 System.out.flush();
@@ -85,8 +86,9 @@ public class Main {
 
                                 System.out.print("Teléfono: ");
                                 String telefono = sc.nextLine();
-
-                                Contacto cliente = new Contacto(nombre, edad, telefono, false);
+                                System.out.println("\nYa ha comprado?: ");
+                                boolean condicion = sc.nextBoolean();
+                                Contacto cliente = new Contacto(nombre, edad, telefono, condicion);
                                 admin.agregarPersona(cliente);
                                 System.out.println(cliente);
                                 break;
@@ -102,16 +104,41 @@ public class Main {
                                 System.out.print("\033[H\033[2J");
                                 System.out.flush();
                                 admin.listar();
+                                System.out.println("\n\nPresiona Enter para continuar.............");
+                                sc.nextLine();
+                                sc.nextLine();
+                                System.out.print("\033[H\033[2J");
+                                System.out.flush();
                                 break;
                             case 4:
+                                System.out.print("\033[H\033[2J");
+                                System.out.flush();
+                                System.out.println("--------------------  OPCIONES AUTOS  --------------------");
+                                System.out.println("--- 1. Agregar    2. Eliminar    3. Listar  4. Salir  ----");
+                                System.out.println("----------------------------------------------------------");
+                                System.out.print("------  R: ");
+                                
+                                opcion = sc.nextInt();
+                                switch (opcion) {
+                                    case 1:
+                                        admin.setAuto(sc);    
+                                        break;
+                                    case 2:
 
-                                break;
+                                        break;
+                                    case 3:
+
+                                        break;
+
+                                    default:
+                                        break;
+                                }
                             case 5:
                                 break;
 
                             case 6:
-                                otp=false;
-                             
+                                otp = false;
+
                             default:
                                 break;
                         }
@@ -129,35 +156,44 @@ public class Main {
                         // Valido si el contacto existe antes de acceder a sus atributos)
                         if (contactoExistente != null
                                 && nombre.trim().equalsIgnoreCase(contactoExistente.getNombre().trim())) {
-                            System.out.println("\nERROR, YA SE HA REGISTRADO");
-                            break;
-                        }
+                            System.out.println("\nYA ESTAS REGISTRADO, BIEN!");
+                            System.out.println("\n\nPresiona enter para continuar.... ");
+                            sc.nextLine();
+                            // sc.nextLine();
+                            admin.rentar(autos, motos);
+                            System.out.println("\nPresiona enter para continuar");
+                            sc.nextLine();
+                        } else {
 
-                        System.out.print("Edad: ");
+                            System.out.print("Edad: ");
 
-                        int edad;
-                        while (true) {
-                            if (sc.hasNextInt()) {
-                                edad = sc.nextInt();
-                                sc.nextLine();
-                                if (edad >= 18)
-                                    break;
-                                System.out.println("Debes ser mayor de edad para rentar. Inténtalo de nuevo.");
-                            } else {
-                                System.out.println("Por favor, ingresa un número válido para la edad.");
-                                sc.nextLine();
+                            int edad;
+                            while (true) {
+                                if (sc.hasNextInt()) {
+                                    edad = sc.nextInt();
+                                    sc.nextLine();
+                                    if (edad >= 18)
+                                        break;
+                                    System.out.println("Debes ser mayor de edad para rentar. Inténtalo de nuevo.");
+                                } else {
+                                    System.out.println("Por favor, ingresa un número válido para la edad.");
+                                    sc.nextLine();
+                                }
                             }
+
+                            System.out.print("Teléfono: ");
+                            String telefono = sc.nextLine();
+
+                            Contacto cliente = new Contacto(nombre, edad, telefono, false);
+                            admin.agregarPersona(cliente);
+                            System.out.println(cliente);
+
+                            // Llamamos a rentar desde Contacto
+                            admin.rentar(autos, motos);
+                            System.out.println("\nPresiona enter para continuar");
+                            sc.nextLine();
+                            // sc.nextLine();
                         }
-
-                        System.out.print("Teléfono: ");
-                        String telefono = sc.nextLine();
-
-                        Contacto cliente = new Contacto(nombre, edad, telefono, false);
-                        admin.agregarPersona(cliente);
-                        System.out.println(cliente);
-
-                        // Llamamos a rentar desde Contacto
-                        cliente.rentar(autos, motos);
 
                     } catch (NullPointerException in) {
                         System.out.println("ERROR");

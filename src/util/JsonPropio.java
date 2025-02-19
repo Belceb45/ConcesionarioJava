@@ -72,4 +72,22 @@ public class JsonPropio {
 
         return motos;
     }
+
+    // Metodos para almacenar nuvos vehiculos en JSON
+
+    // Metodo para alcamenar moto
+    public void guardarMoto(Vehiculo vehiculo){
+
+
+        if (vehiculo instanceof Moto) {
+            System.err.println("Es una moto");
+        }else if (vehiculo instanceof Auto) {
+            System.out.println("Es un carro");
+        }else{
+            System.out.println("ERROR");
+        }
+    }
+
+
+  
 }

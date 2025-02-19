@@ -1,11 +1,13 @@
 package util;
+
+import java.util.List;
 import java.util.Map;
 
 import vehiculos.Auto;
 import vehiculos.Moto;
 
 public class VehiculosFab {
-     // Método para crear un Auto a partir de un mapa de datos
+    // Método para crear un Auto a partir de un mapa de datos
     public static Auto createAuto(Map<String, String> data) {
         try {
             return new Auto(
@@ -17,8 +19,7 @@ public class VehiculosFab {
                     Integer.parseInt(data.getOrDefault("puertas", "4")),
                     Boolean.parseBoolean(data.getOrDefault("deportivo", "false")),
                     data.getOrDefault("velocidad", "0 km/h"),
-                    Integer.parseInt(data.getOrDefault("caballos", "0"))
-            );
+                    Integer.parseInt(data.getOrDefault("caballos", "0")));
         } catch (NumberFormatException e) {
             System.out.println("Error al crear Auto: " + e.getMessage());
             return null;
@@ -37,11 +38,12 @@ public class VehiculosFab {
                     data.getOrDefault("velocidad", "0 km/h"),
                     Integer.parseInt(data.getOrDefault("caballos", "0")),
                     data.getOrDefault("tipo", "Desconocido"),
-                    Integer.parseInt(data.getOrDefault("cilindrada", "0"))
-            );
+                    Integer.parseInt(data.getOrDefault("cilindrada", "0")));
         } catch (NumberFormatException e) {
             System.out.println("Error al crear Moto: " + e.getMessage());
             return null;
         }
-    }   
+    }
+
+    
 }
