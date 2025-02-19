@@ -42,8 +42,8 @@ Tecnologías utilizadas
 ### Compilacion desde raiz del proyecto
 
 1. Ejecutar:
-  - javac -d bin -cp src src/Main.java
+   - javac -d bin -cp src src/Main.java
 
 2. Ejecutar:
-  - java -cp bin Main
+   - java -cp bin Main
 
