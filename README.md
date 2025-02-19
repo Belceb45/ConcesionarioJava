@@ -39,3 +39,11 @@ Tecnologías utilizadas
 ![](https://github.com/Belceb45/ConcesionarioJava/blob/fd6ee9b791b08b7b3d1ea2e619e76ab62825b514/ejemplos_git.png)
 ![](https://github.com/Belceb45/ConcesionarioJava/blob/b8337d0b27e8b84812039aa2e9f62fc03b2d323d/ejemploAdmin_git.png)
 
+### Compilacion desde raiz del proyecto
+
+1. Ejecutar:
+  - javac -d bin -cp src src/Main.java
+
+2. Ejecutar:
+  - java -cp bin Main
+
