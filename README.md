@@ -36,5 +36,5 @@ Tecnologías utilizadas
 
 ## Interfaz
 
-![](https://github.com/Belceb45/ConcesionarioJava/ejemplos_git.png)
+![](https://github.com/Belceb45/ConcesionarioJava/blob/fd6ee9b791b08b7b3d1ea2e619e76ab62825b514/ejemplos_git.png)
 
