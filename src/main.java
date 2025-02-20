@@ -10,14 +10,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Admin por default no guardados en JSON
+        String pathAuto="data/autos.json";
+        String pathMoto="data/motos.json";
         int opcion;
         Scanner sc = new Scanner(System.in);
         Admin admin = new Admin("Diego Rubio Haro", 21, "5616936324", "admin", "admin2908");
 
         try {
             // Cargar datos de autos y motos desde JSON
-            String jsonAutos = JsonPropio.readJsonPropio("data/autos.json");
-            String jsonMotos = JsonPropio.readJsonPropio("data/motos.json");
+            String jsonAutos = JsonPropio.readJsonPropio(pathAuto);
+            String jsonMotos = JsonPropio.readJsonPropio(pathMoto);
             List<Auto> autos = JsonPropio.parseAutos(jsonAutos);
             List<Moto> motos = JsonPropio.parseMotos(jsonMotos);
             while (true) {
@@ -121,15 +123,19 @@ public class Main {
                                 opcion = sc.nextInt();
                                 switch (opcion) {
                                     case 1:
-                                        admin.setAuto(sc);    
+                                        admin.setAuto(sc,autos,pathAuto);    
                                         break;
-                                    case 2:
+                                    case 2: 
 
                                         break;
                                     case 3:
 
+                                        admin.getAutos(autos);
                                         break;
-
+                                        case 4:
+                                    
+                                        admin.getAutos(autos);
+                                        break;
                                     default:
                                         break;
                                 }

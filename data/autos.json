@@ -1,213 +1,211 @@
-{
-  "autos": [
-    {
-      "marca": "Renault",
-      "modelo": "Koleos",
-      "año": 2024,
-      "precio": 2500,
-      "kilometros": "5000 km",
-      "puertas": 4,
-      "deportivo": false,
-      "velocidad": "200 km/h",
-      "caballos": 150
-    },
-    {
-      "marca": "Toyota",
-      "modelo": "Supra",
-      "año": 2023,
-      "precio": 5000,
-      "kilometros": "12000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "280 km/h",
-      "caballos": 350
-    },
-    {
-      "marca": "Ford",
-      "modelo": "Mustang",
-      "año": 2022,
-      "precio": 4500,
-      "kilometros": "8000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "260 km/h",
-      "caballos": 450
-    },
-    {
-      "marca": "Chevrolet",
-      "modelo": "Camaro",
-      "año": 2021,
-      "precio": 4700,
-      "kilometros": "15000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "250 km/h",
-      "caballos": 400
-    },
-    {
-      "marca": "BMW",
-      "modelo": "M3",
-      "año": 2024,
-      "precio": 6000,
-      "kilometros": "3000 km",
-      "puertas": 4,
-      "deportivo": true,
-      "velocidad": "290 km/h",
-      "caballos": 480
-    },
-    {
-      "marca": "Mercedes-Benz",
-      "modelo": "C63 AMG",
-      "año": 2023,
-      "precio": 7500,
-      "kilometros": "7000 km",
-      "puertas": 4,
-      "deportivo": true,
-      "velocidad": "300 km/h",
-      "caballos": 500
-    },
-    {
-      "marca": "Audi",
-      "modelo": "RS5",
-      "año": 2023,
-      "precio": 7000,
-      "kilometros": "10000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "280 km/h",
-      "caballos": 450
-    },
-    {
-      "marca": "Honda",
-      "modelo": "Civic Type R",
-      "año": 2022,
-      "precio": 3200,
-      "kilometros": "12000 km",
-      "puertas": 4,
-      "deportivo": true,
-      "velocidad": "250 km/h",
-      "caballos": 310
-    },
-    {
-      "marca": "Nissan",
-      "modelo": "GT-R",
-      "año": 2024,
-      "precio": 12000,
-      "kilometros": "5000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "330 km/h",
-      "caballos": 600
-    },
-    {
-      "marca": "Volkswagen",
-      "modelo": "Golf GTI",
-      "año": 2023,
-      "precio": 3400,
-      "kilometros": "8000 km",
-      "puertas": 4,
-      "deportivo": false,
-      "velocidad": "240 km/h",
-      "caballos": 250
-    },
-    {
-      "marca": "Hyundai",
-      "modelo": "Elantra N",
-      "año": 2022,
-      "precio": 3100,
-      "kilometros": "11000 km",
-      "puertas": 4,
-      "deportivo": true,
-      "velocidad": "250 km/h",
-      "caballos": 280
-    },
-    {
-      "marca": "Subaru",
-      "modelo": "WRX STI",
-      "año": 2021,
-      "precio": 4000,
-      "kilometros": "13000 km",
-      "puertas": 4,
-      "deportivo": true,
-      "velocidad": "260 km/h",
-      "caballos": 310
-    },
-    {
-      "marca": "Mazda",
-      "modelo": "MX-5",
-      "año": 2023,
-      "precio": 2800,
-      "kilometros": "9000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "210 km/h",
-      "caballos": 181
-    },
-    {
-      "marca": "Porsche",
-      "modelo": "911 Turbo S",
-      "año": 2024,
-      "precio": 20000,
-      "kilometros": "3000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "330 km/h",
-      "caballos": 640
-    },
-    {
-      "marca": "Lamborghini",
-      "modelo": "Huracan",
-      "año": 2024,
-      "precio": 25000,
-      "kilometros": "2000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "340 km/h",
-      "caballos": 630
-    },
-    {
-      "marca": "Ferrari",
-      "modelo": "488 Pista",
-      "año": 2023,
-      "precio": 30000,
-      "kilometros": "4000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "350 km/h",
-      "caballos": 710
-    },
-    {
-      "marca": "McLaren",
-      "modelo": "720S",
-      "año": 2024,
-      "precio": 28000,
-      "kilometros": "2500 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "341 km/h",
-      "caballos": 720
-    },
-    {
-      "marca": "Aston Martin",
-      "modelo": "DB11",
-      "año": 2022,
-      "precio": 19000,
-      "kilometros": "6000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "322 km/h",
-      "caballos": 630
-    },
-    {
-      "marca": "Bugatti",
-      "modelo": "Chiron",
-      "año": 2024,
-      "precio": 3000000,
-      "kilometros": "1000 km",
-      "puertas": 2,
-      "deportivo": true,
-      "velocidad": "420 km/h",
-      "caballos": 1500
-    }
-  ]
-}
+[
+  {
+    "marca": "Renault",
+    "modelo": "Koleos",
+    "anio": 2024,
+    "precio": 2500,
+    "kilometraje": "5000 km",
+    "puertas": 4,
+    "deportivo": false,
+    "velocidad": "200 km/h",
+    "caballos": 150
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Supra",
+    "anio": 2023,
+    "precio": 5000,
+    "kilometraje": "12000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "280 km/h",
+    "caballos": 350
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Mustang",
+    "anio": 2022,
+    "precio": 4500,
+    "kilometraje": "8000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "260 km/h",
+    "caballos": 450
+  },
+  {
+    "marca": "Chevrolet",
+    "modelo": "Camaro",
+    "anio": 2021,
+    "precio": 4700,
+    "kilometraje": "15000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "250 km/h",
+    "caballos": 400
+  },
+  {
+    "marca": "BMW",
+    "modelo": "M3",
+    "anio": 2024,
+    "precio": 6000,
+    "kilometraje": "3000 km",
+    "puertas": 4,
+    "deportivo": true,
+    "velocidad": "290 km/h",
+    "caballos": 480
+  },
+  {
+    "marca": "Mercedes-Benz",
+    "modelo": "C63 AMG",
+    "anio": 2023,
+    "precio": 7500,
+    "kilometraje": "7000 km",
+    "puertas": 4,
+    "deportivo": true,
+    "velocidad": "300 km/h",
+    "caballos": 500
+  },
+  {
+    "marca": "Audi",
+    "modelo": "RS5",
+    "anio": 2023,
+    "precio": 7000,
+    "kilometraje": "10000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "280 km/h",
+    "caballos": 450
+  },
+  {
+    "marca": "Honda",
+    "modelo": "Civic Type R",
+    "anio": 2022,
+    "precio": 3200,
+    "kilometraje": "12000 km",
+    "puertas": 4,
+    "deportivo": true,
+    "velocidad": "250 km/h",
+    "caballos": 310
+  },
+  {
+    "marca": "Nissan",
+    "modelo": "GT-R",
+    "anio": 2024,
+    "precio": 12000,
+    "kilometraje": "5000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "330 km/h",
+    "caballos": 600
+  },
+  {
+    "marca": "Volkswagen",
+    "modelo": "Golf GTI",
+    "anio": 2023,
+    "precio": 3400,
+    "kilometraje": "8000 km",
+    "puertas": 4,
+    "deportivo": false,
+    "velocidad": "240 km/h",
+    "caballos": 250
+  },
+  {
+    "marca": "Hyundai",
+    "modelo": "Elantra N",
+    "anio": 2022,
+    "precio": 3100,
+    "kilometraje": "11000 km",
+    "puertas": 4,
+    "deportivo": true,
+    "velocidad": "250 km/h",
+    "caballos": 280
+  },
+  {
+    "marca": "Subaru",
+    "modelo": "WRX STI",
+    "anio": 2021,
+    "precio": 4000,
+    "kilometraje": "13000 km",
+    "puertas": 4,
+    "deportivo": true,
+    "velocidad": "260 km/h",
+    "caballos": 310
+  },
+  {
+    "marca": "Mazda",
+    "modelo": "MX-5",
+    "anio": 2023,
+    "precio": 2800,
+    "kilometraje": "9000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "210 km/h",
+    "caballos": 181
+  },
+  {
+    "marca": "Porsche",
+    "modelo": "911 Turbo S",
+    "anio": 2024,
+    "precio": 20000,
+    "kilometraje": "3000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "330 km/h",
+    "caballos": 640
+  },
+  {
+    "marca": "Lamborghini",
+    "modelo": "Huracan",
+    "anio": 2024,
+    "precio": 25000,
+    "kilometraje": "2000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "340 km/h",
+    "caballos": 630
+  },
+  {
+    "marca": "Ferrari",
+    "modelo": "488 Pista",
+    "anio": 2023,
+    "precio": 30000,
+    "kilometraje": "4000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "350 km/h",
+    "caballos": 710
+  },
+  {
+    "marca": "McLaren",
+    "modelo": "720S",
+    "anio": 2024,
+    "precio": 28000,
+    "kilometraje": "2500 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "341 km/h",
+    "caballos": 720
+  },
+  {
+    "marca": "Aston Martin",
+    "modelo": "DB11",
+    "anio": 2022,
+    "precio": 19000,
+    "kilometraje": "6000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "322 km/h",
+    "caballos": 630
+  },
+  {
+    "marca": "Bugatti",
+    "modelo": "Chiron",
+    "anio": 2024,
+    "precio": 3000000,
+    "kilometraje": "1000 km",
+    "puertas": 2,
+    "deportivo": true,
+    "velocidad": "420 km/h",
+    "caballos": 1500
+  }
+]

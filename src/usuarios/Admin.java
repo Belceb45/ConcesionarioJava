@@ -3,6 +3,7 @@ package usuarios;
 import java.util.List;
 import java.util.Scanner;
 
+import util.JsonPropio;
 import vehiculos.*;
 
 public class Admin extends Persona {
@@ -63,41 +64,40 @@ public class Admin extends Persona {
     //Metodos para ingresar vehiculos
 
     //Metodo para ingresar un carro
-    public void setAuto(Scanner sc){
+    public void setAuto(Scanner sc, List<Auto> autos,String path){
         System.out.print("\033[H\033[2J");
         System.out.flush();
         sc.nextLine();
         System.out.print("\nMarca: ");
         String marca=sc.nextLine();
-        System.out.print("\nModelo: ");
+        System.out.print("Modelo: ");
         String modelo=sc.nextLine();
-        System.out.print("\nAño: ");
+        System.out.print("Año: ");
         int año=sc.nextInt();
-        System.out.print("\nPrecio por-dia: ");
+        System.out.print("Precio por-dia: ");
         int precio=sc.nextInt();
-        System.out.print("\nKilometraje: ");
+        System.out.print("Kilometraje: ");
         sc.nextLine();
         String kilometros=sc.nextLine();
-        System.out.print("\nPuertas: ");
+        System.out.print("Puertas: ");
         int puertas=sc.nextInt();
-        System.out.print("\nDeportivo?: ");
+        System.out.print("Deportivo?: ");
         boolean deportivo=sc.nextBoolean();
-        System.out.print("\nVelocidad: ");
+        System.out.print("Velocidad: ");
         sc.nextLine();
         String velocidad=sc.nextLine();
-        System.out.print("\nCaballos de fuerza:");
+        System.out.print("Caballos de fuerza:");
         int caballos=sc.nextInt();
 
         Auto auto=new Auto(marca,modelo,año,precio,kilometros,puertas,deportivo,velocidad,caballos);
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-        System.out.println("\n\nPresiona enter para continuar");;
-        sc.nextLine();
-        sc.nextLine();
+        
         System.out.println(auto);
+        JsonPropio.guardarAutos(autos, path);
+
         System.out.println("\n\nPresiona enter para continuar");;
         sc.nextLine();
         sc.nextLine();
+        
     }
 
     //Metodo para ingresar moto

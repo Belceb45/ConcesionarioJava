@@ -1,10 +1,5 @@
 package usuarios;
 
-import vehiculos.Auto;
-import vehiculos.Moto;
-import java.util.List;
-import java.util.Scanner;
-
 public class Contacto extends Persona {
 
     private boolean concurrente;

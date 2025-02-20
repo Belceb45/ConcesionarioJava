@@ -26,6 +26,14 @@ public abstract class Vehiculo {
 
     // Metodos Getters y Setters
    
+    public int getCaballos() {
+        return caballos;
+    }
+
+    public void setCaballos(int caballos) {
+        this.caballos = caballos;
+    }
+
     public String getVelocidad() {
         return velocidad;
     }
@@ -66,7 +74,7 @@ public abstract class Vehiculo {
         this.año = año;
     }
 
-    public double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
